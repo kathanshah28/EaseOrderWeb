@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.active{
+  /* Add whatever CSS style will make your link look active. The example below (in my case) */
+  @apply scale-105
+}
+
+.navlink{
+  @apply flex items-center gap-3
+}
+
+.sidebar-component-p{
+  @apply hidden md:block
+}
+
+.sidebar-options-icons{
+  @apply w-[25px] h-[25px]
+}

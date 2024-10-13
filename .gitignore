@@ -1,0 +1,27 @@
+# Global ignores
+node_modules/
+logs/
+*.log
+
+# Frontend ignores
+frontend/node_modules/
+frontend/dist/
+frontend/build/
+
+# Backend ignores
+Backend/logs/
+Backend/*.log
+Backend/node_modules/
+Backend/dist/
+Backend/build/
+Backend/.env
+Backend/*.temp
+Backend/constants/
+
+
+# Admin ignores
+admin/node_modules/
+admin/dist/
+admin/build/
+admin/dist-ssr
+admin/*.local

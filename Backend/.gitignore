@@ -1,0 +1,19 @@
+# Node modules
+node_modules/
+
+# Logs
+logs/
+*.log
+
+# Environment variables
+.env
+
+# Dependency directories
+dist/
+build/
+
+# Temporary files
+*.tmp
+
+#constants
+constants/
