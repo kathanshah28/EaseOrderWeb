@@ -37,29 +37,29 @@ The system leverages modern technologies and best practices to ensure scalabilit
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
-│                   EaseOrderWeb System                        │
+│                   EaseOrderWeb System                       │
 ├─────────────────────────────────────────────────────────────┤
-│                                                               │
+│                                                             │
 │  ┌──────────────┐  ┌──────────────┐  ┌──────────────┐       │
 │  │   Frontend   │  │    Admin     │  │   Mobile     │       │
 │  │  (Customer)  │  │  Dashboard   │  │   (Future)   │       │
 │  └──────┬───────┘  └──────┬───────┘  └──────┬───────┘       │
-│         │                 │                  │               │
-│         └─────────────────┼──────────────────┘               │
-│                           │                                  │
-│                    ┌──────▼──────┐                           │
-│                    │   Backend    │                          │
-│                    │   API Server │                          │
-│                    │  (Express.js)│                          │
-│                    └──────┬───────┘                          │
-│                           │                                  │
+│         │                 │                  │              │
+│         └─────────────────┼──────────────────┘              │
+│                           │                                 │
+│                    ┌──────▼──────┐                          │
+│                    │   Backend    │                         │
+│                    │   API Server │                         │
+│                    │  (Express.js)│                         │
+│                    └──────┬───────┘                         │
+│                           │                                 │
 │         ┌─────────────────┼─────────────────┐               │
-│         │                 │                 │                │
-│    ┌────▼────┐  ┌────────▼────────┐  ┌────▼────┐           │
-│    │ MongoDB  │  │   Cloudinary    │  │ Stripe   │           │
-│    │ Database │  │ (Image Storage) │  │(Payments)│           │
-│    └──────────┘  └─────────────────┘  └──────────┘           │
-│                                                               │
+│         │                 │                 │               │
+│    ┌────▼────┐  ┌────────▼────────┐  ┌────▼────┐            │
+│    │ MongoDB  │  │   Cloudinary    │  │ Stripe   │          │
+│    │ Database │  │ (Image Storage) │  │(Payments)│          │
+│    └──────────┘  └─────────────────┘  └──────────┘          │
+│                                                             │
 └─────────────────────────────────────────────────────────────┘
 ```
 
@@ -387,25 +387,6 @@ ADMIN_URL=http://localhost:5174
 ALLOWED_ORIGINS=http://localhost:5173,http://localhost:5174
 ```
 
-### **Frontend .env.local**
-```env
-VITE_API_BASE_URL=http://localhost:5000
-```
-
-### **Admin .env.local**
-```env
-VITE_API_BASE_URL=http://localhost:5000
-```
-
----
-
-## 📚 API Documentation
-
-### **Base URL**
-```
-http://localhost:5000/api
-```
-
 ### **Authentication Endpoints**
 
 | Method | Endpoint | Description |
@@ -532,27 +513,6 @@ Contributions are welcome! To contribute:
 3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
 4. Push to the branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
-
-### **Development Guidelines**
-- Follow the existing code structure
-- Use meaningful commit messages
-- Test your changes thoroughly
-- Update documentation as needed
-- Ensure ESLint checks pass
-
----
-
-## 📝 License
-
-This project is licensed under the ISC License - see the LICENSE file for details.
-
----
-
-## 📧 Contact & Support
-
-For questions, suggestions, or support, please open an issue on the [GitHub repository](https://github.com/kathanshah28/EaseOrderWeb/issues).
-
----
 
 ## 🎉 Acknowledgments
 
